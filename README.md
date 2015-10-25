@@ -23,7 +23,7 @@ The "subject_*.txt" files have the same amount of rows as the corresponding X fi
 
 The run_analysis.R script does the following process:
 
-1. Load the data for subjects in the train set into subjectTrain variable.
+1. Load the data for subjects in the train set into _subjectTrain_ variable.
 1. Rename the subjects column to "subject".
 1. Load the data for __X__ in the train set into _XTrain_ variable.
 1. Load 'features.txt' into the _features_ variable.
