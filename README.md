@@ -25,17 +25,17 @@ The run_analysis.R script does the following process:
 
 1. Load the data for subjects in the train set into subjectTrain variable.
 1. Rename the subjects column to "subject".
-1. Load the data for X in the train set into XTrain variable.
-1. Load features.txt into the features variable.
-1. Rename the features in Xtrain using the features.
-1. Load the data for y in the train set into yTrain variable.
-1. Rename the y column to "activity".
-1. Join columns for Train set (subject, X, y)
-1. Repeat the previous steps for Y (except loading the features, which we reuse).
-1. Join both sets into joinSet data frame.
-1. Filter the columns to only include activity, subject and columns containing either 'mean' or 'std'.
-1. Read the activity_labels.txt into activityLabels variable.
-1. Use activityLabels to replace the values in the column "activity" to the corresponding activity labels.
-1. Create a data frame using _melt_ function that has 'subjec' and 'activity' as the ids.
-1. Store in variable 'tidy' the result of applying _ddply_ function on the melted data frame to calculate mean and standard deviation grouping by 'subject' and 'activity'. 
-1. Save 'tidy' data frame to 'tidy.txt' file.
+1. Load the data for __X__ in the train set into _XTrain_ variable.
+1. Load 'features.txt' into the _features_ variable.
+1. Rename the features in _Xtrain_ using the features.
+1. Load the data for __y__ in the train set into _yTrain_ variable.
+1. Rename the _y_ column to "activity".
+1. Join columns for Train set (subject, X, y).
+1. Repeat the previous steps for _Y_ (except loading the _features_, which we reuse).
+1. Join both sets into _joinSet_ data frame.
+1. Filter the columns to only include "activity", "subject" and columns containing either 'mean' or 'std'.
+1. Read the 'activity_labels.txt' into _activityLabels_ variable.
+1. Use _activityLabels_ to replace the values in the column "activity" to the corresponding activity labels.
+1. Create a data frame using _melt_ function that has 'subject' and 'activity' as the ids.
+1. Store in variable _tidy_ the result of applying _ddply_ function on the melted data frame to calculate mean and standard deviation grouping by 'subject' and 'activity'. 
+1. Save _tidy_ data frame to 'tidy.txt' file.
