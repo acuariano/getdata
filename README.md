@@ -1,5 +1,5 @@
 # getdata
-## Assignment for Coursera Getting and Cleaning Data from Johns Hopkins University
+## Assignment for Coursera's Getting and Cleaning Data from Johns Hopkins University
 
 To run the code just run in R:
 ```
@@ -9,16 +9,20 @@ The code should result in a "tidy.txt" file being created. See the Code Book for
 
 In this project we got the information from "Human Activity Recognition Using Smartphones Data Set" transformed it to a tidy data set that captures the average and standard deviation for the features that are themselves mean or std.
 
-The original information comes from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones but we used here link in the assignment: 
+The original information comes from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones but we used here the link in the assignment: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-The original data set is separated in two main folders, 'train' for the training data set and 'test' for the test data set. Each folder is structured in files which correspond to the X = y, where X is a matrix of features and y is the vector result. This is commonly used for logistic regression in Machine Learning. 
+The original data set is separated in two main folders, 'train' for the training data set and 'test' for the test data set. Each folder is structured in files which correspond to the X = y form, where X is a matrix of features and y is the vector result. This is commonly used for logistic regression in Machine Learning. 
+
 The results vectors 'y' values correspond to the 'activity_labels.txt' file.
+
 The matrices X has one column per feature in the 'features.txt' file and one row per observation.
+
 The "subject_*.txt" files have the same amount of rows as the corresponding X files and each one has the subject (person in the experiment) number.
 
 
 The run_analysis.R script does the following process:
+
 1. Load the data for subjects in the train set into subjectTrain variable.
 1. Rename the subjects column to "subject".
 1. Load the data for X in the train set into XTrain variable.
